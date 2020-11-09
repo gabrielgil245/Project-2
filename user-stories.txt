@@ -1,0 +1,5 @@
+As a social influencer, I want to search for GIFs, 
+so that I may use them in my social media outlets.
+
+As a YouTube content creator, I want to search and retrieve GIFs
+so that I may incorporate them in my YouTube videos.
