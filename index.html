@@ -4,60 +4,68 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css\bootstrap.min.css">
-
+    
+    <link href="css\style.css" rel="stylesheet" type="text/css"/>
     <title>Project 2</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- TODO Address the font size associated with "h1" -->
-      <a class="navbar-brand h1" href="index.html">GIPHY Search API</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- TODO Justify the remaining nav-items to align more to right side of the screen -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <form class="form-inline">
-              <div class="pr-2">GIF Search:</div>
-              <input class="form-control mr-sm-2" type="search" aria-label="GIF Search">
-              <button class="btn btn-outline-success my-sm-0" type="submit">Search</button>
-            </form>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              No. of GIFs:
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="dropdown-item">10</div>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-item">25</div>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-item">50</div>
-              <div class="dropdown-divider"></div>
-            </div>
-          </li>         
-        </ul>
-        
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand m-0" style="font-size: 2rem;" href="index.html">
+          <img src="img\giphy_icon.png" width="10%" height="10%" 
+          alt="">
+          GIPHY Search API
+        </a>
+        <button class="navbar-toggler" type="button" 
+        data-toggle="collapse" data-target="#navbarToggler" 
+        aria-controls="navbarToggler" aria-expanded="false" 
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-5" href="index.html">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-5" href="index.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-lg-5" 
+              id="navbarDropdown" role="button" 
+              data-toggle="dropdown" aria-haspopup="true" 
+              aria-expanded="false">
+                No. of GIFs:
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="dropdown-item">10</div>
+                  <div class="dropdown-divider"></div>
+                  <div class="dropdown-item">25</div>
+                  <div class="dropdown-divider"></div>
+                  <div class="dropdown-item">50</div>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="pr-2">GIF Search: </div>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <!-- NOTE: <button> type changed from "search" to "button" -->
+            <button id="get-from-api" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
-
-    <!-- <div class="container-fluid">
+    
+    <div class="container-fluid">
       <div class="d-flex flex-row">
-        <div class="col-6 h1">GIPHY Search API</div>
-        <div class="d.nonecol-lg-2 h3 d-flex justify-content-center align-items-center">Search</div>
-        <div class="col-lg-2 h3 d-flex justify-content-center align-items-center">About</div>
-        <div class="col-lg-2 h3 d-flex justify-content-center align-items-center">Contact</div>
+        <div id="search-results"></div>
       </div>
-    </div> -->
+    </div>
 
     <script src="js\jquery-3.5.1.slim.min.js"></script>
     <script src="js\bootstrap.bundle.min.js"></script>
+    <script src="js\main.js"></script>
   </body>
 </html>
