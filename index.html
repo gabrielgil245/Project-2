@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
       <div class="container-fluid">
         <a class="navbar-brand m-0" style="font-size: 2rem;" href="index.html">
           <img src="img\giphy_icon.png" width="10%" height="10%" 
@@ -32,27 +32,13 @@
             <li class="nav-item">
               <a class="nav-link mx-lg-5" href="index.html">Contact</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle mx-lg-5" 
-              id="navbarDropdown" role="button" 
-              data-toggle="dropdown" aria-haspopup="true" 
-              aria-expanded="false">
-                No. of GIFs:
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <div class="dropdown-item">10</div>
-                  <div class="dropdown-divider"></div>
-                  <div class="dropdown-item">25</div>
-                  <div class="dropdown-divider"></div>
-                  <div class="dropdown-item">50</div>
-              </div>
-            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
+            <div class="pr-2">No. of GIFs: (Limited to 50)</div>
+            <input id="GIF-field" class="form-control mr-sm-2" type="text" placeholder="Search">
             <div class="pr-2">GIF Search: </div>
-            <input class="form-control mr-sm-2" type="search" placeholder="Search">
-            <!-- NOTE: <button> type changed from "search" to "button" -->
-            <button id="get-from-api" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+            <input id="search-field" class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button id="get-from-api" class="btn btn-outline-success my-2 my-sm-0" type="button">Submit</button>
           </form>
         </div>
       </div>
@@ -60,7 +46,9 @@
     
     <div class="container-fluid">
       <div class="d-flex flex-row">
-        <div id="search-results"></div>
+        <div id="search-results">
+          
+        </div>
       </div>
     </div>
 
