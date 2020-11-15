@@ -4,10 +4,22 @@
 {
     padding-top: 6rem;
 }
+.navbar
+{
+    font-size: 1rem;
+}
+.navbar-brand
+{
+    font-size: 1rem;
+}
+
 /* Small devices */
 @media only screen and (min-width: 576px)
 {
-
+    .navbar-brand
+    {
+        font-size: 1.5rem
+    }
 }
 /* Medium devices */
 @media only screen and (min-width: 768px)
@@ -17,7 +29,7 @@
 /* Large devices */
 @media only screen and (min-width: 992px)
 {
-    
+
 }
 /* Extra large devices */
 @media only screen and (min-width: 1200px)
