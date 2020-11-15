@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css\bootstrap.min.css">
     
-    <link href="css\style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css\style.css" type="text/css"/>
     <title>Project 2</title>
   </head>
-  <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
-      <div class="container-fluid">
-        <a class="navbar-brand m-0" style="font-size: 2rem;" href="index.html">
-          <img src="img\giphy_icon.png" width="10%" height="10%" 
-          alt="">
-          GIPHY Search API
+  <body style="font-family: Archivo Black">
+    <div class="container-fluid">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white" href="index.html">
+          <img src="img\giphy_icon.png">GIPHY Search API
         </a>
         <button class="navbar-toggler" type="button" 
         data-toggle="collapse" data-target="#navbarToggler" 
@@ -23,28 +20,29 @@
         aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+        
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link mx-lg-5" href="index.html">About <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white mx-xl-5" href="index.html">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-lg-5" href="index.html">Contact</a>
+              <a class="nav-link text-white mx-xl-5" href="index.html">Contact</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <div class="pr-2">No. of GIFs: (Limited to 50)</div>
+            <div class="pr-2 text-white">No. of GIFs:</div>
             <input id="GIF-field" class="form-control mr-sm-2" type="text" placeholder="Search">
-            <div class="pr-2">GIF Search: </div>
-            <input id="search-field" class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button id="get-from-api" class="btn btn-outline-success my-2 my-sm-0" type="button">Submit</button>
+            <div class="pr-2 text-white">GIF Search: </div>
+            <input id="search-field" class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button id="get-from-api" class="btn btn-success my-2 my-sm-0" type="button">Submit</button>
           </form>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     
-    <div class="container-fluid">
+    
+    <div class="container-fluid results-padding">
       <div class="d-flex flex-row">
         <div id="search-results">
           

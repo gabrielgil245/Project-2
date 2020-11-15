@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+/* Default styles */
+.results-padding
+{
+    padding-top: 6rem;
+}
+/* Small devices */
+@media only screen and (min-width: 576px)
+{
+
+}
+/* Medium devices */
+@media only screen and (min-width: 768px)
+{
+
+}
+/* Large devices */
+@media only screen and (min-width: 992px)
+{
+    
+}
+/* Extra large devices */
+@media only screen and (min-width: 1200px)
+{
+
+}
