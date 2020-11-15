@@ -22,14 +22,16 @@
         </button>
         
         <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav nav-pills mr-auto my-2 my-lg-0">
+          <ul class="navbar-nav nav-pills mr-auto">
             <li class="nav-item">
               <a class="nav-link offset-4 col-4 offset-lg-0 col-lg d-flex 
-              justify-content-center align-items-center mx-xl-5 text-white" href="index.html">About <span class="sr-only">(current)</span></a>
+              justify-content-center align-items-center mx-xl-5 my-2
+              text-white" href="index.html">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link offset-4 col-4 offset-lg-0 col-lg d-flex 
-              justify-content-center align-items-center mx-xl-5 text-white" href="index.html">Contact</a>
+              justify-content-center align-items-center mx-xl-5 my-2
+              text-white" href="index.html">Contact</a>
             </li>
           </ul>
           
@@ -37,11 +39,11 @@
             <div class="form-row">
               <div class="offset-2 offset-lg-0 col-lg-3 d-flex justify-content-lg-end align-items-center py-2 text-white">No. of GIFs:</div>
               <input id="GIF-field" class="offset-2 col-8 offset-lg-0 col-lg-1 
-              d-flex justify-content-lg-start align-self-center form-control py-2" type="text">
+              d-flex justify-content-lg-start align-self-center form-control py-2" type="text" maxlength="2">
               <div class="offset-2 offset-lg-0 col-lg-3 d-flex justify-content-lg-end align-items-center py-2 text-white">GIF Search: </div>
               <input id="search-field" class="offset-2 col-8 offset-lg-0 col-lg-3 
               d-flex justify-content-lg-start align-self-center form-control py-2" type="search">
-              <button id="get-from-api" class="offset-4 col-4 offset-md-5 col-md-2 offset-lg-0 col-lg-2 
+              <button id="get-from-api" class="offset-4 col-4 offset-lg-0 col-lg-2 
               d-flex justify-content-center align-self-center btn btn-success mt-4 mt-lg-0" 
               data-toggle="collapse" data-target="#navbarToggler" type="button">Submit</button>
             </div>
