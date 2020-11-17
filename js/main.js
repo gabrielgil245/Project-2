@@ -25,4 +25,20 @@ $(document).ready(function(){
             }
         })
     })
+
+    $("#top-button").on("click", async() => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
+
+    let topButton = document.getElementById("top-button");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction()
+    {
+        if(document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400)
+        { topButton.style.display = "block"; }
+        else { topButton.style.display = "none" };
+    }
 });
